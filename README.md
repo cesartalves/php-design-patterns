@@ -50,6 +50,43 @@ Subclasses can have just one parent class. In most languages, inheritance doesn�
 Imagine that you must make your code work with a broad set of objects that belong to a sophisticated library or framework. Ordinarily, you’d need to initialize all of those objects, keep track of dependencies, execute methods in the correct order, and so on.
 As a result, the business logic of your classes would become tightly coupled to the implementation details of 3rd-party classes, making it hard to comprehend and maintain.
 
+## Builder
+
+construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
+
+Intent:
+Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+Parse a complex representation, create one of several targets
+Builder focuses on constructing a complex object step by step. Abstract Factory emphasizes a family of product objects (either simple or complex). Builder returns the product as a final step, but as far as the Abstract Factory is concerned, the product gets returned immediately.
+Builder often builds a Composite.
+Often, designs start out using Factory Method (less complicated, more customizable, subclasses proliferate) and evolve toward Abstract Factory, Prototype, or Builder (more flexible, more complex) as the designer discovers where more flexibility is needed.
+
+### Problema
+
+Imagine a complex object that requires laborious, step-by-step initialization of many fields and nested objects. Such initialization code is usually buried inside a monstrous constructor with lots of parameters. Or even worse: scattered all over the client code.
+https://refactoring.guru/design-patterns/builder
+Criação de objetos é complexa
+Várias representações possíveis
+
+### Exemplo
+
+https://laravel.com/docs/5.8/queries
+
+## Observer
+
+
+define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
+when to refactor: Subclasses are hard-coded to notify a single instance of another class
+
+Mediator and Observer are competing patterns. The difference between them is that Observer distributes communication by introducing "observer" and "subject" objects, whereas a Mediator object encapsulates the communication between other objects. We've found it easier to make reusable Observers and Subjects than to make reusable Mediators.
+
+
+
+
+
+
+
+
 
 
 
