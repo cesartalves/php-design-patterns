@@ -1,7 +1,9 @@
 # php-design-patterns
 Design Pattern examples in the context of an E-commerce / Marketplace integration domain
 
-# Slides
+Link for the presentation! https://docs.google.com/presentation/d/13eG-J_iFlF0RFjbfbgkTJGyXd3xBWiJctS_MUz5e080/edit?usp=sharing
+
+# Slides Annotations
 
 ## 2
 
