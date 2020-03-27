@@ -5,23 +5,30 @@ Design Pattern examples in the context of an E-commerce / Marketplace integratio
 
 ## 2
 
+- "Simple and Elegant solutions to specific problems in OO Design"
+- "You'll find recurring patterns of classes and communicating objects in many object-oriented systems. These patterns solve specific design problems and makde the design more flexible, elegant, and ultimately reusable
+
 Analogia (Design Patterns, gof): assim como um escritor utiliza temas já definidos para escrever suas histórias, podemos também basear nossa arquitetura em soluções testadas pelo tempo
 
 Essa ideia nasceu de um livro de arquitetura urbana (Christopher Alexander) as early as 1966 (c.f. "The Pattern of Streets," JOURNAL OF THE AIP, September, 1966, Vol. 32, No. 3, pp. 273-278)
+
+ o movimento ao redor de padrões de projeto só ganhou popularidade em 1995 quando foi publicado o livro Design Patterns: Elements of Reusable Object-Oriented Software. Os autores desse livro, Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides, são conhecidos como a "Gangue dos Quatro" (Gang of Four) ou simplesmente "GoF".
 
 ## 3 
 
 Padroes do Go4 são de aplicação genérica
 Podem haver até mesmo padrões para lidar com domínios específcos. Eles mesmos dizem que o catálogo deles explorava apenas uma parcela limitada
 
-Criacionais:
+### GOF
+
+#### Criacionais:
 Tornam a criação de objetos mais flexível
 
-Estruturais:
+#### Estruturais
 
 These design patterns are all about Class and Object composition. Structural class-creation patterns use inheritance to compose interfaces. Structural object-patterns define ways to compose objects to obtain new functionality.
 
-Comportamentais:
+#### Comportamentais
 - Permitem alterar o comportamento de classes em runtime, usando composição - o que é muito mais flexível que extensão
 - Comunicação entre objetos
 
@@ -36,7 +43,9 @@ TL;DR: não abuse ou seu código pode virar procedural
 
 ## Decorator
 
-O Decorator surgiu da necessidade de adicionar um comportamento, funcionalidade ou estado extra a um objeto em tempo de execução, por exemplo quando Herança não é concebível por ser um caso que geraria um número muito alto de sub-classes
+O Decorator surgiu da necessidade de adicionar um comportamento, funcionalidade ou estado extra a um objeto em tempo de execução, 
+
+exemplo quando Herança não é concebível por ser um caso que geraria um número muito alto de sub-classes
 
 ### Problema
 
